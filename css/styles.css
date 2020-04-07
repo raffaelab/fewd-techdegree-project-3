@@ -1,0 +1,195 @@
+/* Base Element Styles */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Merriweather', serif;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #748595;
+}
+
+h1 {
+	color: #283944;
+	font-size: 1.25em;
+	font-weight: 700;
+	margin-top: 15px;
+}
+
+/* Class Styles */
+
+.main-header {
+	background: #283944;
+	color: white;
+	text-align: center;
+	height: 70px;
+}
+
+.site-title {
+	font-size: 1.25em;
+	text-transform: uppercase;
+}
+
+.intro {
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	border-bottom: 4px solid #283944;
+}
+
+.bg-blue {
+	background: #CEF0FF;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.main-footer {
+	font-style: italic;
+	font-size: .9em;
+	color: #BAC0C4;
+	margin: 30px 0;
+}
+
+/* Form Styles */
+
+fieldset {
+	display: block;
+  border: none;
+	padding: 0;
+	margin-top: 2px;
+	margin-bottom: 30px;
+}
+
+legend {
+	color: #283845;
+	font-size: 1.25em;
+	font-weight: 700;
+	width: 100%;
+	border-top: 2px solid #283944;
+	padding-top: 25px;
+	padding-bottom: 5px;
+}
+
+label {
+  display: block;
+	margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+label.inline {
+  display: inline;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+	background: #F1F1F1;
+	border-radius: 5px;
+	border: none;
+	width: 100%;
+	height: 45px;
+	padding: 15px;
+}
+
+input[type="number"] {
+	width: 50%;
+}
+
+::placeholder {
+	font-style: italic;
+	font-size: 0.75em;
+	color: #BAC0C4;
+	text-align: right;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 5px 15px 0;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+	border: 2px solid #283944;
+	background-color: #CEF0FF;
+	transition: background-color 1s ease-in-out;
+}
+
+button {
+	background: #56B8B3;
+	color: white;
+	border-radius: 5px;
+	border: none;
+	width: 100%;
+	height: auto;
+	padding: 15px;
+	font-weight: 700;
+}
+
+/* Layout Containers */
+
+.container {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* Flex Styles */
+
+.main-header,
+.main-footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+
+	.container {
+		width: 600px;
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-size: 1.6em;
+	}
+
+	legend {
+		padding-top: 40px;
+	}
+
+	label {
+		display: inline-block;
+		width: 25%;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="number"],
+	select {
+		width: 74%;
+		margin: 10px 0;
+	}
+
+	input[type="number"] {
+		width: 25%;
+	}
+
+	.newsletter-label {
+		width: 100%;
+	}
+
+	textarea {
+		height: 100px;
+	}
+
+}
